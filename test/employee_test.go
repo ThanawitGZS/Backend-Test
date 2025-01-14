@@ -1,4 +1,4 @@
-package uint
+package unit
 
 import (
 	"testing"
@@ -36,7 +36,7 @@ func TestEmployee(t *testing.T) {
 	t.Run(`email is required`, func(t *testing.T){
 		employee := entity.Employee{
 			Name: "A",
-			Email: "",
+			Email: "A.com",//ผิดตรงนี้
 		}
 
 		ok, err := govalidator.ValidateStruct(employee)
