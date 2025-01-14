@@ -1,4 +1,4 @@
-package uint
+package unit
 
 import (
 	"testing"
@@ -12,6 +12,7 @@ func TestRoom(t *testing.T){
 
 	e := entity.Employee{
 		Name:"Thanawit",
+		Email: "A@aaa.com",
 	}
 
 	t.Run(`Room is valid`, func(t *testing.T){
